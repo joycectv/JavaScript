@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>M1 E4</title>
+  </head>
+  <body>
+    <script>
+      function experiencia(anos) {
+        var resultado = "Jedi Master";
+
+        if (anos <= 1) {
+          resultado = "Iniciante";
+        } else if (anos > 1 && anos <= 3) {
+          resultado = "Intermediário";
+        } else if (anos > 3 && anos <= 6) {
+          resultado = "Avançado";
+        } 
+        return resultado;
+      }
+
+      var anosEstudo = 8;
+
+      var resultado = experiencia(anosEstudo);
+
+      console.log(resultado);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+Driver de teclado 
+ -> Teclado padrão PS/2
+ -> Dispositivo de telcado HID

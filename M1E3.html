@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>M1 E3</title>
+  </head>
+  <body>
+    <script>
+      function temHabilidades(habilidades, encontrar='Javascript') {
+        var index = habilidades.indexOf(encontrar);
+
+        if (index == 0){
+            return true;
+        }   
+            return false;
+      }
+      var habilidade = ["Javascript", "ReactJS", "React Native"];
+
+      var resultado = temHabilidades(habilidade);
+        console.log(resultado);
+    </script>
+  </body>
+</html>

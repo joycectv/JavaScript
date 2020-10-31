@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>M1 E2</title>
+  </head>
+  <body>
+    <script>
+      function pares(x, y) {
+
+        var arrPares = [];
+
+        for (let index = x; index <= y; index++) {
+          var modulo = index % 2;
+
+          if(modulo == 0){
+            arrPares.push(index);
+          }
+        }
+
+        return arrPares;
+
+      }
+
+        var resultado = pares(0, 100);
+
+        console.log(resultado);
+    </script>
+  </body>
+</html>
