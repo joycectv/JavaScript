@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>M2E4</title>
+    </head>
+    <body>
+        <input type="text" name="nome"></input>
+        <button onClick="adicionar()">Adicionar</button>
+        <ul id="app">
+        </ul>
+
+
+        <script>
+            function adicionar(){
+                var app = document.querySelector('#app');
+                // var nomes = ["Diego", "Gabriel", "Lucas"];
+                var text = document.querySelector('input[name=nome]')
+                console.log(text.value);
+
+                var liElement = document.createElement('li');
+                liElement.innerHTML = text.value;
+                app.appendChild(liElement);
+
+                // for(nome of nomes){
+                //     var liElement = document.createElement('li');
+                //     liElement.innerHTML = nome;
+                //     app.appendChild(liElement);
+                // }   
+            }
+    
+        </script>
+    </body>
+</html>

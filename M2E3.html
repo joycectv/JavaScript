@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>M2E3</title>
+    </head>
+    <body>
+       
+        <ul id="app">
+        </ul>
+
+
+        <script>
+            var app = document.querySelector('#app');
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+
+            for(nome of nomes){
+                var liElement = document.createElement('li');
+                liElement.innerHTML = nome;
+                app.appendChild(liElement);
+            }
+
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>M2E1</title>
+        <!-- <style>
+            #app {
+                display: flex; 
+                flex-direction: row; 
+                justify-content: space-between;
+                border: 1px solid blue;
+            }
+        </style> -->
+    </head>
+    <body>
+        <button class="botao box" onclick="quadrado()">Clique Aqui!</button>
+       
+        <div id="app">
+        </div>
+
+
+        <script>
+           var btnElement = document.querySelector('button.botao');
+           function quadrado(){
+                var boxElement = document.querySelector('#app');
+                var divElement = document.createElement('div');
+                
+                boxElement.appendChild(divElement);
+                boxElement.style.width = '100px';
+                boxElement.style.height = '100px';
+                boxElement.style.backgroundColor = '#F00';
+            }
+
+        </script>
+    </body>
+</html>

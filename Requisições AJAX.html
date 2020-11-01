@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Requisições AJAX</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="user">
+            <button onclick="">Adicionar</button>
+
+            <ul>
+                
+            </ul>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="todos.js"></script>
+    </body>
+</html>
+
+<!-- var minhaPromise  = function(){
+    return new Promise(function(resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('Get', 'https://api.github.com/users/joycectv');
+        xhr.send(null);
+
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    resolve(JSON.parse(xhr.responseText));
+                }   else {
+                    reject('Erro na requisição'); //Requisições AJAx
+                }
+            }
+        }
+    });
+} -->
+
+
+<!-- axios.get('https://api.github.com/users/joycectv')
+    .then(function(response) {
+        console.log(response);
+    })
+    .catch(function(error) {
+        console.warn(error);
+    }); // Promise: classe para trabalhar com then e catch
+        // Para trabalhar com código assíncrono. -->
